@@ -1,0 +1,110 @@
+  .svg-wrapper {
+    height: 60px;
+      margin: 0 auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 320px;
+  }
+  
+  .shape {
+    fill: transparent;
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+    stroke: #19f6e8;
+  }
+  
+  .text {
+    color: #fff;
+    font-family: 'Roboto Condensed';
+    font-size: 22px;
+    letter-spacing: 8px;
+    line-height: 32px;
+    position: relative;
+    top: -48px;
+  }
+  
+  @keyframes draw {
+    0% {
+      stroke-dasharray: 140 540;
+      stroke-dashoffset: -474;
+      stroke-width: 8px;
+    }
+    100% {
+      stroke-dasharray: 760;
+      stroke-dashoffset: 0;
+      stroke-width: 2px;
+    }
+  }
+  
+  .svg-wrapper:hover .shape {
+    -webkit-animation: 0.5s draw linear forwards;
+    animation: 0.5s draw linear forwards;
+  }
+
+  body {
+    background: #41c79d;
+    color: #323232;
+    font-weight: 300;
+    height: 100%;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-family: Helvetica neue, roboto;
+  }
+  .container {
+    background-color: #FFE4C4;
+    width: 80%;
+    height: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5;
+  }
+  #header {
+    background-color: #FF7F50;
+    color: peachpuff;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: top;
+    text-align: center;
+    justify-content: center;
+  }
+  /*navigation*/
+  #nav {
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-right: 10px;
+    padding-right: 30px;
+    background-color: aliceblue;
+    text-align: left;
+    border-style: double;
+  }
+ img {
+    width: 56px;
+    height: 48px;
+  }
+  h1 {
+    font-weight: 200;
+    font-style: 26px;
+    margin: 10px;
+    text-align: center;
+  }
+  #intro {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
+  .family {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  .career {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+  
